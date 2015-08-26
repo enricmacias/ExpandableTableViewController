@@ -4,6 +4,8 @@
 
 Swift library to easily show, hide and customize table view cells as an expandable list of items.
 
+![alt tag](https://raw.github.com/enricmacias/ExpandableTableViewController/master/Preview/preview.gif)
+
 ## Requirements
 
 - iOS 7.0

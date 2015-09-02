@@ -13,21 +13,20 @@ Swift library to easily show, hide and customize table view cells as an expandab
 
 ## Usage
 
-1. Inherit your UITableViewController class with ExpandableTableViewController.
-
-	```swift
-	class DemoTableViewController: ExpandableTableViewController{
-		...
-	}
-	```
-2. Implement your class with the ExpandableTableViewDatasource and ExpandableTableViewDelegate protocols.
+1. Implement your UITableViewController class with ExpandableTableViewController and ExpandableTableViewDatasource, ExpandableTableViewDelegate protocols.
 
 	```swift
 	class DemoTableViewController: ExpandableTableViewController, ExpandableTableViewDelegate, ExpandableTableViewDatasource {
 		...
 	}
 	```
-3. Set the expandableDatasource and expandableDelegate properties to self in your viewDidLoad()
+2. In your Storyboard, connect the IBOutlet expandableTableView with your current UITableView object.
+
+	Image
+3. In your Storyboard, set the UITableView object with the ExpandableTableView class.
+
+	Image
+4. Set the expandableDatasource and expandableDelegate properties to self in your viewDidLoad()
 
 	```swift
 	override func viewDidLoad() {
@@ -37,7 +36,7 @@ Swift library to easily show, hide and customize table view cells as an expandab
 		self.expandableTableView.expandableDatasource = self
 	}
 	```
-4. Add and implement the ExpandableTableViewDatasource required methods:
+5. Add and implement the ExpandableTableViewDatasource required methods:
 
 	```swift
 	// Rows
@@ -52,7 +51,7 @@ Swift library to easily show, hide and customize table view cells as an expandab
 	func expandableTableView(expandableTableView: ExpandableTableView, heightForSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
 	func expandableTableView(expandableTableView: ExpandableTableView, estimatedHeightForSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
 	```
-5. Add and implement the ExpandableTableViewDelegate required methods:
+6. Add and implement the ExpandableTableViewDelegate required methods:
 
 	```swift
 	// Rows
@@ -61,7 +60,7 @@ Swift library to easily show, hide and customize table view cells as an expandab
 	// Subrows
 	func expandableTableView(expandableTableView: ExpandableTableView, didSelectSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath)
 	```
-6. You are done!
+7. You are done.
 
 ## Installation
 

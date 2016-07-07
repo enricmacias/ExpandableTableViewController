@@ -9,17 +9,16 @@
 /* Begin PBXBuildFile section */
 		16DB92752CC397B7BA72A1EC4C896F8C /* Pods-ExpandableTableViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2731A634E85122E61667E4640A8ABC9C /* Pods-ExpandableTableViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		206105733E9B185BB503D1CEF1840A7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		23E22C66652D10D91DE662AF59F7305B /* ExpandableTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD20CF1FF4792C0CE6D443796AAD517 /* ExpandableTableViewController-dummy.m */; };
+		2E4BCC4FBE07BB77B6C7D8F65F78A2A8 /* ExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D9EA0249B99929698C3E4D403B5216 /* ExpandableTableViewDelegate.swift */; };
+		3D83C15B0A14852A4677D35452AE2CEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		41C456C8E9D1756C33EF92B2F96F2DDE /* Pods-ExpandableTableViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD9854B4E5B32E1ED0DB8D9E5C7EBF /* Pods-ExpandableTableViewController_Example-dummy.m */; };
-		5014AF4CF56828E15C67B1F683499C19 /* ExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B442CA22B56F53032495D279998CD57D /* ExpandableTableViewDelegate.swift */; };
-		63D513EADDCF84D6205581B8291322D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		84A65BD0119FAE051935D898CB298D05 /* ExpandableTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C051EE08790BFDD2F675108239B82C9C /* ExpandableTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4E1B00005F088C782132B1C10A9FD1 /* ExpandableTableViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD20CF1FF4792C0CE6D443796AAD517 /* ExpandableTableViewController-dummy.m */; };
 		A1782DC56E262FC2871624D5E5CC5644 /* Pods-ExpandableTableViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A967976D35AF0FC23AAD37AAC6BAF9D0 /* Pods-ExpandableTableViewController_Tests-dummy.m */; };
-		A4F16EB5D70FF878C970EEB68F5E3836 /* ExpandableTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CE5F02A310B53E9AD990F2DB14ECBB /* ExpandableTableViewDatasource.swift */; };
-		A552A6B2B8C03A5E51B73EAE0D1820F5 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE32220001D436BEFDAE6DA17D334EA8 /* ArrayExtension.swift */; };
+		B84263B5AD88E59FBB339A2C77C5543E /* ExpandableTableViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C051EE08790BFDD2F675108239B82C9C /* ExpandableTableViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB2B4FFABE8AF3F4B868A8C5A73D688B /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F556F81024DCCFDCD1BC89BF6929303 /* ArrayExtension.swift */; };
 		C9F5C5C947692B3F26C7B1B8A3150AFD /* Pods-ExpandableTableViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D17363A6256BF8E40016A504BC27C1DB /* Pods-ExpandableTableViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D54419FF9EE311C00C2F05594FC62992 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206879F31867A12BFFB5A8DBBACE41 /* ExpandableTableViewController.swift */; };
 		E13E38F7B3B9F9D96FFBF22903ACE6BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F85BE8DFB55697D20D5764DC087925B5 /* ExpandableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD87D6204B69F74520477228EFBCA1 /* ExpandableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +26,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE01E8F81201E19BE93E86EE4C143F7B;
+			remoteGlobalIDString = D18A9F00F35F76596E6CB02B0C0B1DD2;
 			remoteInfo = ExpandableTableViewController;
 		};
 /* End PBXContainerItemProxy section */
@@ -37,14 +36,15 @@
 		08EDA1A0F0DD2C42AF0301DE3A2B4858 /* Pods-ExpandableTableViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExpandableTableViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		14096D92D77EC79363012B5301770E58 /* Pods_ExpandableTableViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableTableViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D8F2891751E8B547A90D2FEEA31E9B /* Pods-ExpandableTableViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExpandableTableViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		15D9EA0249B99929698C3E4D403B5216 /* ExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
 		1FCD9854B4E5B32E1ED0DB8D9E5C7EBF /* Pods-ExpandableTableViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExpandableTableViewController_Example-dummy.m"; sourceTree = "<group>"; };
 		223CF067B08249EFA182D06A147F9A54 /* Pods-ExpandableTableViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExpandableTableViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2731A634E85122E61667E4640A8ABC9C /* Pods-ExpandableTableViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExpandableTableViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		369B1EC4976FDB376500730ADBD93150 /* ExpandableTableViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExpandableTableViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBEADC4907DB69DF8A5A05A42F4D638 /* Pods-ExpandableTableViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExpandableTableViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3F556F81024DCCFDCD1BC89BF6929303 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		3FB6FA158B8BE097E55CA4C9DFEE2833 /* Pods_ExpandableTableViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableTableViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		407915F12593128EDA6CC7E3BA783BA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42CE5F02A310B53E9AD990F2DB14ECBB /* ExpandableTableViewDatasource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewDatasource.swift; sourceTree = "<group>"; };
 		51DD480B8E00F07B84A8353F34221DE3 /* Pods-ExpandableTableViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExpandableTableViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5A7213FA73F940CB541E1985B1DC66AA /* Pods-ExpandableTableViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExpandableTableViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D10F9C5A71C8F4E724A0F8C0115D44A /* Pods-ExpandableTableViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExpandableTableViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -57,16 +57,14 @@
 		A967976D35AF0FC23AAD37AAC6BAF9D0 /* Pods-ExpandableTableViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExpandableTableViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		A9F1860D33685004983D78DAECD7425D /* Pods-ExpandableTableViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExpandableTableViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AA5ABC8909800B4458C60F8DE67AE5DE /* Pods-ExpandableTableViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ExpandableTableViewController_Tests.modulemap"; sourceTree = "<group>"; };
-		B442CA22B56F53032495D279998CD57D /* ExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
 		BBEADDA31CA39FF71CFD9B9C7923002B /* Pods-ExpandableTableViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExpandableTableViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCB69F6876A6BD735DEDD1B5EC3CC557 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C051EE08790BFDD2F675108239B82C9C /* ExpandableTableViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExpandableTableViewController-umbrella.h"; sourceTree = "<group>"; };
 		CCD20CF1FF4792C0CE6D443796AAD517 /* ExpandableTableViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExpandableTableViewController-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D17363A6256BF8E40016A504BC27C1DB /* Pods-ExpandableTableViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExpandableTableViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		DE32220001D436BEFDAE6DA17D334EA8 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		E4012E988A6DC489485C7B3C47021731 /* Pods-ExpandableTableViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExpandableTableViewController_Tests-resources.sh"; sourceTree = "<group>"; };
-		EA206879F31867A12BFFB5A8DBBACE41 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
+		E9DD87D6204B69F74520477228EFBCA1 /* ExpandableTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewController.swift; sourceTree = "<group>"; };
 		EB93600F8FBC8131618C8A13DC0F4AA1 /* ExpandableTableViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpandableTableViewController.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,19 +77,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9727F93CFD8BD264AA67355933B18ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D83C15B0A14852A4677D35452AE2CEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9930D439270277F594CDB4A145604BD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E13E38F7B3B9F9D96FFBF22903ACE6BD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA6D30B4613FAD09E090846A87DC2AA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63D513EADDCF84D6205581B8291322D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +102,14 @@
 				DCA3A18C3FCD399C52CC4D455B9C7907 /* ExpandableTableViewController */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2631B310B0114894FF2DE5BC6EAF7B1C /* ExpandableTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4F3A7C860F119B2DF92DF1EAE315953 /* Classes */,
+			);
+			path = ExpandableTableViewController;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -151,17 +157,6 @@
 			path = "Target Support Files/Pods-ExpandableTableViewController_Example";
 			sourceTree = "<group>";
 		};
-		6F33D6FE90854F721353ABC8D830FBEC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				DE32220001D436BEFDAE6DA17D334EA8 /* ArrayExtension.swift */,
-				EA206879F31867A12BFFB5A8DBBACE41 /* ExpandableTableViewController.swift */,
-				42CE5F02A310B53E9AD990F2DB14ECBB /* ExpandableTableViewDatasource.swift */,
-				B442CA22B56F53032495D279998CD57D /* ExpandableTableViewDelegate.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -171,14 +166,6 @@
 				40B89D423365F30135B5D748D4A5F393 /* Products */,
 				506A3EAB87F7D2076A42E4524F8FCBCE /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9E98ADD15C247BB9F3A88078AC97295F /* ExpandableTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6F33D6FE90854F721353ABC8D830FBEC /* Classes */,
-			);
-			path = ExpandableTableViewController;
 			sourceTree = "<group>";
 		};
 		9EAE2D96169B9A2F8A60E30895CF505B /* Pods-ExpandableTableViewController_Tests */ = {
@@ -224,29 +211,39 @@
 		DCA3A18C3FCD399C52CC4D455B9C7907 /* ExpandableTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9E98ADD15C247BB9F3A88078AC97295F /* ExpandableTableViewController */,
+				2631B310B0114894FF2DE5BC6EAF7B1C /* ExpandableTableViewController */,
 				A4D468D1EAB369EDBB594AB2C585AF2C /* Support Files */,
 			);
 			name = ExpandableTableViewController;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		E4F3A7C860F119B2DF92DF1EAE315953 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3F556F81024DCCFDCD1BC89BF6929303 /* ArrayExtension.swift */,
+				E9DD87D6204B69F74520477228EFBCA1 /* ExpandableTableViewController.swift */,
+				15D9EA0249B99929698C3E4D403B5216 /* ExpandableTableViewDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0445F49D8D90276CB1A648EF8355DAEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B84263B5AD88E59FBB339A2C77C5543E /* ExpandableTableViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75B4981F82B61918AF5D456DC35C1B7A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				16DB92752CC397B7BA72A1EC4C896F8C /* Pods-ExpandableTableViewController_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6DC9038132F2E58B4D17D4194735B49 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84A65BD0119FAE051935D898CB298D05 /* ExpandableTableViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,13 +293,13 @@
 			productReference = 14096D92D77EC79363012B5301770E58 /* Pods_ExpandableTableViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CE01E8F81201E19BE93E86EE4C143F7B /* ExpandableTableViewController */ = {
+		D18A9F00F35F76596E6CB02B0C0B1DD2 /* ExpandableTableViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC7514B6484BAC1C2F8E0B77DED640A5 /* Build configuration list for PBXNativeTarget "ExpandableTableViewController" */;
+			buildConfigurationList = B9F607813D8EE02C6D902CEF22E28663 /* Build configuration list for PBXNativeTarget "ExpandableTableViewController" */;
 			buildPhases = (
-				E9CC6000228B1D7690622178003790BC /* Sources */,
-				CA6D30B4613FAD09E090846A87DC2AA4 /* Frameworks */,
-				B6DC9038132F2E58B4D17D4194735B49 /* Headers */,
+				49377631644EB8138C33EEBAA9C5033A /* Sources */,
+				9727F93CFD8BD264AA67355933B18ABD /* Frameworks */,
+				0445F49D8D90276CB1A648EF8355DAEA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -334,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE01E8F81201E19BE93E86EE4C143F7B /* ExpandableTableViewController */,
+				D18A9F00F35F76596E6CB02B0C0B1DD2 /* ExpandableTableViewController */,
 				789782BBF51A8EE9E2E692CA96D523E1 /* Pods-ExpandableTableViewController_Example */,
 				94F2ED696D1E765D833BE02507761909 /* Pods-ExpandableTableViewController_Tests */,
 			);
@@ -342,6 +339,17 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49377631644EB8138C33EEBAA9C5033A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2B4FFABE8AF3F4B868A8C5A73D688B /* ArrayExtension.swift in Sources */,
+				5A4E1B00005F088C782132B1C10A9FD1 /* ExpandableTableViewController-dummy.m in Sources */,
+				F85BE8DFB55697D20D5764DC087925B5 /* ExpandableTableViewController.swift in Sources */,
+				2E4BCC4FBE07BB77B6C7D8F65F78A2A8 /* ExpandableTableViewDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		741E60A45E8A3E987A45B4250A4914B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,69 +366,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9CC6000228B1D7690622178003790BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A552A6B2B8C03A5E51B73EAE0D1820F5 /* ArrayExtension.swift in Sources */,
-				23E22C66652D10D91DE662AF59F7305B /* ExpandableTableViewController-dummy.m in Sources */,
-				D54419FF9EE311C00C2F05594FC62992 /* ExpandableTableViewController.swift in Sources */,
-				A4F16EB5D70FF878C970EEB68F5E3836 /* ExpandableTableViewDatasource.swift in Sources */,
-				5014AF4CF56828E15C67B1F683499C19 /* ExpandableTableViewDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		4DC795A274A1D1F0E7D74380E9CE3C90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ExpandableTableViewController;
-			target = CE01E8F81201E19BE93E86EE4C143F7B /* ExpandableTableViewController */;
+			target = D18A9F00F35F76596E6CB02B0C0B1DD2 /* ExpandableTableViewController */;
 			targetProxy = 998B4C2E9848A975068F4E9AB1DEA4D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3078F1C0968653FF9FF317468255D127 /* Release */ = {
+		4224C5A175938F424A4404165935927C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DBEADC4907DB69DF8A5A05A42F4D638 /* Pods-ExpandableTableViewController_Tests.release.xcconfig */;
 			buildSettings = {
@@ -435,7 +393,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-ExpandableTableViewController_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ExpandableTableViewController_Tests/Pods-ExpandableTableViewController_Tests.modulemap";
@@ -453,132 +411,7 @@
 			};
 			name = Release;
 		};
-		4921D322B320552601454FABD73110E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBEADDA31CA39FF71CFD9B9C7923002B /* Pods-ExpandableTableViewController_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ExpandableTableViewController_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ExpandableTableViewController_Tests/Pods-ExpandableTableViewController_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ExpandableTableViewController_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4BC12398E0F77A5F306DD0B5524C9042 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB93600F8FBC8131618C8A13DC0F4AA1 /* ExpandableTableViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ExpandableTableViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B47E55C4FEF5448D09826EC369C84D78 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DCCC26642164BBE4795D2EB5F95BACF /* Pods-ExpandableTableViewController_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ExpandableTableViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ExpandableTableViewController_Example/Pods-ExpandableTableViewController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ExpandableTableViewController_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C89864595CBA67D64494259599EB14C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB93600F8FBC8131618C8A13DC0F4AA1 /* ExpandableTableViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ExpandableTableViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -613,14 +446,177 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D860E05656ECDA32BAC0E339E481F387 /* Debug */ = {
+		80E34FEAD3B1E1EBAA7D745FF0B5B7A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB93600F8FBC8131618C8A13DC0F4AA1 /* ExpandableTableViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ExpandableTableViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A35CFC27D449851D5CD694CB89B3342E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBEADDA31CA39FF71CFD9B9C7923002B /* Pods-ExpandableTableViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ExpandableTableViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExpandableTableViewController_Tests/Pods-ExpandableTableViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ExpandableTableViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B39A2795AE898A001C2C6DDA3283B517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB93600F8FBC8131618C8A13DC0F4AA1 /* ExpandableTableViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExpandableTableViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ExpandableTableViewController/ExpandableTableViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ExpandableTableViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3B00934C5550B496426370A84E1E9F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCCC26642164BBE4795D2EB5F95BACF /* Pods-ExpandableTableViewController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ExpandableTableViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExpandableTableViewController_Example/Pods-ExpandableTableViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ExpandableTableViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5CA2B4DB2E1E6690E289C3B6F4F39F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9F1860D33685004983D78DAECD7425D /* Pods-ExpandableTableViewController_Example.debug.xcconfig */;
 			buildSettings = {
@@ -635,7 +631,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-ExpandableTableViewController_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ExpandableTableViewController_Example/Pods-ExpandableTableViewController_Example.modulemap";
@@ -660,8 +656,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9F607813D8EE02C6D902CEF22E28663 /* Build configuration list for PBXNativeTarget "ExpandableTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80E34FEAD3B1E1EBAA7D745FF0B5B7A0 /* Debug */,
+				B39A2795AE898A001C2C6DDA3283B517 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -669,8 +674,8 @@
 		BE8A74515855FC14733466E4C8C13182 /* Build configuration list for PBXNativeTarget "Pods-ExpandableTableViewController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D860E05656ECDA32BAC0E339E481F387 /* Debug */,
-				B47E55C4FEF5448D09826EC369C84D78 /* Release */,
+				C5CA2B4DB2E1E6690E289C3B6F4F39F4 /* Debug */,
+				C3B00934C5550B496426370A84E1E9F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -678,17 +683,8 @@
 		DD19AAF1F8438491FE60C57122066358 /* Build configuration list for PBXNativeTarget "Pods-ExpandableTableViewController_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4921D322B320552601454FABD73110E1 /* Debug */,
-				3078F1C0968653FF9FF317468255D127 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC7514B6484BAC1C2F8E0B77DED640A5 /* Build configuration list for PBXNativeTarget "ExpandableTableViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C89864595CBA67D64494259599EB14C2 /* Debug */,
-				4BC12398E0F77A5F306DD0B5524C9042 /* Release */,
+				A35CFC27D449851D5CD694CB89B3342E /* Debug */,
+				4224C5A175938F424A4404165935927C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

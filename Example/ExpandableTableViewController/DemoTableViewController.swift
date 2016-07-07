@@ -13,7 +13,7 @@ enum TableViewRows: Int {
     case Text = 0, DatePicker, List
 }
 
-class DemoTableViewController: ExpandableTableViewController, ExpandableTableViewDelegate, ExpandableTableViewDatasource {
+class DemoTableViewController: ExpandableTableViewController, ExpandableTableViewDelegate {
     
     // MARK: - Properties
     lazy var dateFormatter: NSDateFormatter = {
@@ -29,7 +29,6 @@ class DemoTableViewController: ExpandableTableViewController, ExpandableTableVie
         // Do any additional setup after loading the view, typically from a nib.
         
         self.expandableTableView.expandableDelegate = self
-        self.expandableTableView.expandableDatasource = self
     }
 
     override func didReceiveMemoryWarning() {

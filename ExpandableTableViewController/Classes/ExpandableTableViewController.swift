@@ -32,7 +32,6 @@ public class ExpandableTableView: UITableView {
     
     public weak var parentViewController: ExpandableTableViewController! = nil
     public var expandableDelegate: ExpandableTableViewDelegate!
-    public var expandableDatasource: ExpandableTableViewDatasource!
     
     public func cellForRowAtIndexPath(expandableIndexPath: ExpandableIndexPath) -> UITableViewCell?{
         return parentViewController.indexedCells[expandableIndexPath.string()]
@@ -199,7 +198,7 @@ public class ExpandableTableViewController: UITableViewController {
         var tableViewContentOffset = self.tableView.contentOffset
         var indexesArray: [NSIndexPath] = []
         
-        let numberOfSubCells = expandableTableView.expandableDatasource.expandableTableView(expandableTableView, numberOfSubRowsInRowAtExpandableIndexPath: expandableIndexPath)
+        let numberOfSubCells = expandableTableView.expandableDelegate.expandableTableView(expandableTableView, numberOfSubRowsInRowAtExpandableIndexPath: expandableIndexPath)
         var heightForNewRows: CGFloat = 0.0
         for _ in 0...(numberOfSubCells - 1){
             indexesArray.append(newIndexPath.copy() as! NSIndexPath)
@@ -234,7 +233,7 @@ public class ExpandableTableViewController: UITableViewController {
         var tableViewContentOffset = self.tableView.contentOffset
         var indexesArray: [NSIndexPath] = []
         
-        let numberOfSubCells = expandableTableView.expandableDatasource.expandableTableView(expandableTableView, numberOfSubRowsInRowAtExpandableIndexPath: expandableIndexPath)
+        let numberOfSubCells = expandableTableView.expandableDelegate.expandableTableView(expandableTableView, numberOfSubRowsInRowAtExpandableIndexPath: expandableIndexPath)
         var heightForNewRows: CGFloat = 0.0
         for _ in 0...(numberOfSubCells - 1){
             indexesArray.append(newIndexPath.copy() as! NSIndexPath)
@@ -265,7 +264,7 @@ public class ExpandableTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let numOfRows = expandableTableView.expandableDatasource.expandableTableView(expandableTableView, numberOfRowsInSection: section)
+        let numOfRows = expandableTableView.expandableDelegate.expandableTableView(expandableTableView, numberOfRowsInSection: section)
         
         if numOfRows != numberOfMainCells(){
             cellsTypeArray = []
@@ -280,10 +279,10 @@ public class ExpandableTableViewController: UITableViewController {
         let expandableIndexPath = expandableIndexPathForIndexPath(indexPath)
         
         if cellsTypeArray.get(indexPath.row) == .MainCell {
-            cell = expandableTableView.expandableDatasource.expandableTableView(expandableTableView, cellForRowAtExpandableIndexPath: expandableIndexPath)
+            cell = expandableTableView.expandableDelegate.expandableTableView(expandableTableView, cellForRowAtExpandableIndexPath: expandableIndexPath)
         }
         else if cellsTypeArray.get(indexPath.row) == .SubCell {
-            cell = expandableTableView.expandableDatasource.expandableTableView(expandableTableView, subCellForRowAtExpandableIndexPath: expandableIndexPath)
+            cell = expandableTableView.expandableDelegate.expandableTableView(expandableTableView, subCellForRowAtExpandableIndexPath: expandableIndexPath)
         }
         
         print(indexPath)
@@ -298,10 +297,10 @@ public class ExpandableTableViewController: UITableViewController {
         let expandableIndexPath = expandableIndexPathForIndexPath(indexPath)
         
         if cellsTypeArray.get(indexPath.row) == .MainCell {
-            return expandableTableView.expandableDatasource.expandableTableView(expandableTableView, heightForRowAtExpandableIndexPath: expandableIndexPath)
+            return expandableTableView.expandableDelegate.expandableTableView(expandableTableView, heightForRowAtExpandableIndexPath: expandableIndexPath)
         }
         else if cellsTypeArray.get(indexPath.row) == .SubCell {
-            return expandableTableView.expandableDatasource.expandableTableView(expandableTableView, heightForSubRowAtExpandableIndexPath: expandableIndexPath)
+            return expandableTableView.expandableDelegate.expandableTableView(expandableTableView, heightForSubRowAtExpandableIndexPath: expandableIndexPath)
         }
         
         return super.tableView(tableView, heightForRowAtIndexPath: indexPath)
@@ -311,10 +310,10 @@ public class ExpandableTableViewController: UITableViewController {
         let expandableIndexPath = expandableIndexPathForIndexPath(indexPath)
         
         if cellsTypeArray.get(indexPath.row) == .MainCell {
-            return expandableTableView.expandableDatasource.expandableTableView(expandableTableView, estimatedHeightForRowAtExpandableIndexPath: expandableIndexPath)
+            return expandableTableView.expandableDelegate.expandableTableView(expandableTableView, estimatedHeightForRowAtExpandableIndexPath: expandableIndexPath)
         }
         else if cellsTypeArray.get(indexPath.row) == .SubCell {
-            return expandableTableView.expandableDatasource.expandableTableView(expandableTableView, estimatedHeightForSubRowAtExpandableIndexPath: expandableIndexPath)
+            return expandableTableView.expandableDelegate.expandableTableView(expandableTableView, estimatedHeightForSubRowAtExpandableIndexPath: expandableIndexPath)
         }
         
         return super.tableView(tableView, estimatedHeightForRowAtIndexPath: indexPath)

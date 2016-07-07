@@ -1,5 +1,5 @@
 PODS:
-  - ExpandableTableViewController (0.0.1)
+  - ExpandableTableViewController (1.0)
 
 DEPENDENCIES:
   - ExpandableTableViewController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ExpandableTableViewController: dbe6d1adf33312be4a32fb1d3000548d91b22f3d
+  ExpandableTableViewController: 612ddf917d60ca671473af593a8d7cdd554b071e
 
 PODFILE CHECKSUM: 182f932c545c98f34f7fa888836f035774e1576a
 

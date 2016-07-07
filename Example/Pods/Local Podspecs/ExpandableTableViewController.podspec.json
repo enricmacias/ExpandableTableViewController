@@ -1,6 +1,6 @@
 {
   "name": "ExpandableTableViewController",
-  "version": "0.0.1",
+  "version": "1.0",
   "summary": "Swift library to easily show, hide and customize table view cells as an expandable list of items.",
   "description": "Swift library to easily show, hide and customize table view cells as an expandable list of items, long text or pickers.",
   "homepage": "https://github.com/enricmacias/ExpandableTableViewController",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/enricmacias/ExpandableTableViewController.git",
-    "tag": "0.0.1"
+    "tag": "1.0"
   },
   "platforms": {
     "ios": "8.0"

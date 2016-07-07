@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ExpandableTableViewController_Example' do
+  pod 'ExpandableTableViewController', :path => '../'
+
+  target 'ExpandableTableViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

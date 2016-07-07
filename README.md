@@ -1,6 +1,5 @@
 # ExpandableTableViewController
 
-[![CI Status](http://img.shields.io/travis/Enric Macias Lopez/ExpandableTableViewController.svg?style=flat)](https://travis-ci.org/Enric Macias Lopez/ExpandableTableViewController)
 [![Version](https://img.shields.io/cocoapods/v/ExpandableTableViewController.svg?style=flat)](http://cocoapods.org/pods/ExpandableTableViewController)
 [![License](https://img.shields.io/cocoapods/l/ExpandableTableViewController.svg?style=flat)](http://cocoapods.org/pods/ExpandableTableViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ExpandableTableViewController.svg?style=flat)](http://cocoapods.org/pods/ExpandableTableViewController)
@@ -18,20 +17,23 @@ Swift library to easily show, hide and customize table view cells as an expandab
 
 ## Usage
 
-1. Implement your UITableViewController class with ExpandableTableViewController and ExpandableTableViewDatasource, ExpandableTableViewDelegate protocols.
+1.Implement your UITableViewController class with ExpandableTableViewController and ExpandableTableViewDatasource, ExpandableTableViewDelegate protocols.
 
 ```swift
 class DemoTableViewController: ExpandableTableViewController, ExpandableTableViewDelegate, ExpandableTableViewDatasource {
 ...
 }
 ```
-2. In your Storyboard, connect the IBOutlet expandableTableView with your current UITableView object.
 
-Image
-3. In your Storyboard, set the UITableView object with the ExpandableTableView class.
+2.In your Storyboard, set the UITableView object with the ExpandableTableView class.
 
-Image
-4. Set the expandableDatasource and expandableDelegate properties to self in your viewDidLoad()
+![alt tag](https://github.com/enricmacias/ExpandableTableViewController/blob/master/Preview/Image1.png)
+
+3.In your Storyboard, connect the IBOutlet expandableTableView with your current UITableView object.
+
+![alt tag](https://github.com/enricmacias/ExpandableTableViewController/blob/master/Preview/Image2.png)
+
+4.Set the expandableDatasource and expandableDelegate properties to self in your viewDidLoad()
 
 ```swift
 override func viewDidLoad() {
@@ -41,7 +43,8 @@ self.expandableTableView.expandableDelegate = self
 self.expandableTableView.expandableDatasource = self
 }
 ```
-5. Add and implement the ExpandableTableViewDatasource required methods:
+
+5.Add and implement the ExpandableTableViewDatasource required methods:
 
 ```swift
 // Rows
@@ -56,7 +59,7 @@ func expandableTableView(expandableTableView: ExpandableTableView, subCellForRow
 func expandableTableView(expandableTableView: ExpandableTableView, heightForSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
 func expandableTableView(expandableTableView: ExpandableTableView, estimatedHeightForSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
 ```
-6. Add and implement the ExpandableTableViewDelegate required methods:
+6.Add and implement the ExpandableTableViewDelegate required methods:
 
 ```swift
 // Rows
@@ -65,7 +68,6 @@ func expandableTableView(expandableTableView: ExpandableTableView, didSelectRowA
 // Subrows
 func expandableTableView(expandableTableView: ExpandableTableView, didSelectSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath)
 ```
-7. You are done.
 
 ## Installation
 

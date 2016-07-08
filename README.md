@@ -17,34 +17,33 @@ Swift library to easily show, hide and customize table view cells as an expandab
 
 ## Usage
 
-1.Implement your UITableViewController class with ExpandableTableViewController and ExpandableTableViewDatasource, ExpandableTableViewDelegate protocols.
+1.Implement your UITableViewController class with the ExpandableTableViewController class and ExpandableTableViewDelegate protocol.
 
 ```swift
-class DemoTableViewController: ExpandableTableViewController, ExpandableTableViewDelegate, ExpandableTableViewDatasource {
-...
+class DemoTableViewController: ExpandableTableViewController, ExpandableTableViewDelegate {
+	...
 }
 ```
 
 2.In your Storyboard, set the UITableView object with the ExpandableTableView class.
 
-![alt tag](https://github.com/enricmacias/ExpandableTableViewController/blob/master/Preview/Image1.png)
+<img src="https://github.com/enricmacias/ExpandableTableViewController/blob/master/Preview/Image1.png" width="600" />
 
 3.In your Storyboard, connect the IBOutlet expandableTableView with your current UITableView object.
 
-![alt tag](https://github.com/enricmacias/ExpandableTableViewController/blob/master/Preview/Image2.png)
+<img src="https://github.com/enricmacias/ExpandableTableViewController/blob/master/Preview/Image2.png" width="600" />
 
 4.Set the expandableDatasource and expandableDelegate properties to self in your viewDidLoad()
 
 ```swift
 override func viewDidLoad() {
-super.viewDidLoad()
+	super.viewDidLoad()
 
-self.expandableTableView.expandableDelegate = self
-self.expandableTableView.expandableDatasource = self
+	self.expandableTableView.expandableDelegate = self
 }
 ```
 
-5.Add and implement the ExpandableTableViewDatasource required methods:
+5.Add and implement the ExpandableTableViewDelegate required methods:
 
 ```swift
 // Rows
@@ -52,22 +51,27 @@ func expandableTableView(expandableTableView: ExpandableTableView, numberOfRowsI
 func expandableTableView(expandableTableView: ExpandableTableView, cellForRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> UITableViewCell
 func expandableTableView(expandableTableView: ExpandableTableView, heightForRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
 func expandableTableView(expandableTableView: ExpandableTableView, estimatedHeightForRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
+func expandableTableView(expandableTableView: ExpandableTableView, didSelectRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath)
 
 // Subrows
 func expandableTableView(expandableTableView: ExpandableTableView, numberOfSubRowsInRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> Int
 func expandableTableView(expandableTableView: ExpandableTableView, subCellForRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> UITableViewCell
 func expandableTableView(expandableTableView: ExpandableTableView, heightForSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
 func expandableTableView(expandableTableView: ExpandableTableView, estimatedHeightForSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat
-```
-6.Add and implement the ExpandableTableViewDelegate required methods:
-
-```swift
-// Rows
-func expandableTableView(expandableTableView: ExpandableTableView, didSelectRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath)
-
-// Subrows
 func expandableTableView(expandableTableView: ExpandableTableView, didSelectSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath)
 ```
+
+*Use the "dequeueReusableCellWithIdentifier(identifier:, expandableIndexPath:)" method from the expandableTableView property to deque cells with the ExpandableIndexPath.
+```swift
+func expandableTableView(expandableTableView: ExpandableTableView, cellForRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> UITableViewCell
+{
+    let cell = expandableTableView.dequeueReusableCellWithIdentifier("CellIdentifier", forIndexPath: expandableIndexPath)
+
+    return cell
+}
+```
+
+**You can also use the "indexPathForExpandableIndexPath(expandableIndexPath:)" method to retrieve an indexPath.
 
 ## Installation
 
@@ -84,10 +88,9 @@ pod "ExpandableTableViewController"
 
 Import the following files into your project:
 
-DemoExpandableTableViewController/ExpandableTableViewController folder:
+ExpandableTableViewController/ExpandableTableViewController/Classes folder:
 ```ruby
 ExpandableTableViewController.swift
-ExpandableTableViewDatasource.swift
 ExpandableTableViewDelegate.swift
 ArrayExtension.swift
 ```

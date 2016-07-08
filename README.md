@@ -15,6 +15,25 @@ Swift library to easily show, hide and customize table view cells as an expandab
 - iOS 8.0
 - UIKit
 
+## ExpandableTableView
+```swift
+public struct ExpandableIndexPath{
+    public var section = 0
+    public var row = 0
+    public var subRow = 0
+    
+    init(forSection aSection: Int, forRow aRow: Int, forSubRow aSubRow: Int) {
+        section = aSection
+        row = aRow
+        subRow = aSubRow
+    }
+    
+    func string() ->String{
+        return String(section)+String(row)+String(subRow)
+    }
+}
+```
+
 ## Usage
 
 1.Implement your UITableViewController class with the ExpandableTableViewController class and ExpandableTableViewDelegate protocol.
@@ -61,7 +80,7 @@ func expandableTableView(expandableTableView: ExpandableTableView, estimatedHeig
 func expandableTableView(expandableTableView: ExpandableTableView, didSelectSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath)
 ```
 
-*Use the "dequeueReusableCellWithIdentifier(identifier:, expandableIndexPath:)" method from the expandableTableView property to deque cells with the ExpandableIndexPath.
+*Use the "dequeueReusableCellWithIdentifier(identifier:, expandableIndexPath:)" method from the expandableTableView property to deque cells with the given ExpandableIndexPath.
 ```swift
 func expandableTableView(expandableTableView: ExpandableTableView, cellForRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> UITableViewCell
 {
@@ -71,14 +90,29 @@ func expandableTableView(expandableTableView: ExpandableTableView, cellForRowAtE
 }
 ```
 
-**You can also use the "indexPathForExpandableIndexPath(expandableIndexPath:)" method to retrieve an indexPath.
+#### Useful methods
+```swift
+//////////// * ExpandableTableView Methods * ////////////
+// Returns the cell at the ExpandableIndexPath given.
+public func cellForRowAtIndexPath(expandableIndexPath: ExpandableIndexPath) -> UITableViewCell?
+
+// Deques a cell a the ExpandableIndexPath given.
+public func dequeueReusableCellWithIdentifier(identifier: String, forIndexPath expandableIndexPath: ExpandableIndexPath) -> UITableViewCell
+
+// Shows if the ExpandableIndexPath provided is an expanded cell or not.
+public func isCellExpandedAtExpandableIndexPath(expandableIndexPath:ExpandableIndexPath) -> Bool
+
+// Deselects the cell at the ExpandableIndexPath given.
+public func deselectRowAtExpandableIndexPath(expandableIndexPath: ExpandableIndexPath, animated: Bool)
+
+//////////// * ExpandableTableViewController Methods * ////////////
+// Unexpands all the expanded cells at once.
+public func unexpandAllCells()
+```
 
 ## Installation
 
 #### Cocoapods
-
-ExpandableTableViewController is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
 ```ruby
 pod "ExpandableTableViewController"

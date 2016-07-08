@@ -215,15 +215,7 @@ public class ExpandableTableViewController: UITableViewController {
         // Avoids an old-fashioned scrolling to the top when inserting cells and the table view is scrolled.
         if tableViewContentOffset.y > 0{
             tableViewContentOffset.y = tableViewContentOffset.y + heightForNewRows
-            if UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedAscending{
-                // iOS 7
-                // Avoids an occasional not desired animation in i0S 7
-                self.tableView.setContentOffset(tableViewContentOffset, animated: false)
-            }
-            else{
-                self.tableView.setContentOffset(tableViewContentOffset, animated: true)
-            }
-            
+            self.tableView.setContentOffset(tableViewContentOffset, animated: true)
         }
     }
     
@@ -250,14 +242,7 @@ public class ExpandableTableViewController: UITableViewController {
         // Avoids an old-fashioned scrolling to the top when deleting cells and the table view is scrolled.
         if tableViewContentOffset.y > 0{
             tableViewContentOffset.y = tableViewContentOffset.y - heightForNewRows
-            if UIDevice.currentDevice().systemVersion.compare("8.0.0", options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedAscending{
-                // iOS 7
-                // Avoids an occasional not desired animation in i0S 7
-                self.tableView.setContentOffset(tableViewContentOffset, animated: false)
-            }
-            else{
-                self.tableView.setContentOffset(tableViewContentOffset, animated: true)
-            }
+            self.tableView.setContentOffset(tableViewContentOffset, animated: true)
         }
     }
 
@@ -285,8 +270,8 @@ public class ExpandableTableViewController: UITableViewController {
             cell = expandableTableView.expandableDelegate.expandableTableView(expandableTableView, subCellForRowAtExpandableIndexPath: expandableIndexPath)
         }
         
-        print(indexPath)
-        print(cell)
+        //print(indexPath)
+        //print(cell)
         
         indexedCells[expandableIndexPath.string()] = cell
         

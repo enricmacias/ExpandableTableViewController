@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ExpandableTableViewController'
-  s.version          = '1.0'
+  s.version          = '2.0'
   s.summary          = 'Swift library to easily show, hide and customize table view cells as an expandable list of items.'
 
   s.description      = <<-DESC

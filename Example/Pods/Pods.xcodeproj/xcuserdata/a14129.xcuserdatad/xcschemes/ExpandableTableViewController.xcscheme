@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CE01E8F81201E19BE93E86EE4C143F7B'
+               BlueprintIdentifier = 'D18A9F00F35F76596E6CB02B0C0B1DD2'
                BlueprintName = 'ExpandableTableViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ExpandableTableViewController.framework'>

@@ -1,9 +1,7 @@
 //
 //  ArrayExtension.swift
-//  scc
 //
 //  Created by Enric Macias Lopez on 6/25/15.
-//  Copyright (c) 2015 株式会社ガラパゴス. All rights reserved.
 //
 
 extension Array {

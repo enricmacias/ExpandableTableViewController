@@ -1,9 +1,7 @@
 //
 //  ExpandableTableViewController.swift
-//  scc
 //
 //  Created by Enric Macias Lopez on 6/25/15.
-//  Copyright (c) 2015 株式会社ガラパゴス. All rights reserved.
 //
 
 import UIKit
@@ -111,6 +109,8 @@ public class ExpandableTableViewController: UITableViewController {
         }
     }
     
+    // MARK: - Private methods
+    
     private func expandableIndexPathForIndexPath(indexPath: NSIndexPath) -> ExpandableIndexPath{
         
         return ExpandableIndexPath(forSection: indexPath.section, forRow: rowIndexForRow(indexPath.row), forSubRow: subrowIndexForRow(indexPath.row))
@@ -139,8 +139,6 @@ public class ExpandableTableViewController: UITableViewController {
         
         return NSIndexPath(forRow: -1, inSection: -1)
     }
-    
-    // MARK: - Private methods
     
     private func rowIndexForRow(row: Int) -> Int{
         var rowIndex : Int = row

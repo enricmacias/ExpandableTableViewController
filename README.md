@@ -15,24 +15,12 @@ Swift library to easily show, hide and customize table view cells as an expandab
 - iOS 8.0
 - UIKit
 
-## ExpandableTableView
-```swift
-public struct ExpandableIndexPath{
-    public var section = 0
-    public var row = 0
-    public var subRow = 0
-    
-    init(forSection aSection: Int, forRow aRow: Int, forSubRow aSubRow: Int) {
-        section = aSection
-        row = aRow
-        subRow = aSubRow
-    }
-    
-    func string() ->String{
-        return String(section)+String(row)+String(subRow)
-    }
-}
-```
+## In detail
+
+An ExpandableTableView is a normal UITableView, but with subrows under its rows.
+If a normal UITableView has sections and rows, an ExpandableTableView has sections, rows and subrows.
+
+<img src="https://github.com/enricmacias/ExpandableTableViewController/blob/master/Preview/ExpandableTableView.png" width="300" />
 
 ## Usage
 

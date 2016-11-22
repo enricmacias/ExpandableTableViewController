@@ -155,8 +155,7 @@ open class ExpandableTableViewController: UITableViewController {
         }
         
         // Creates a correct index for the user's datasource
-        var index: Int
-        for index = rowIndex; index >= 0; index -= 1 {
+        for index in stride(from: rowIndex, through: 0, by: -1) {
             // We substract 1 for each subcell
             if cellsTypeArray.get(index) == .subCell{
                 rowIndex = rowIndex - 1

@@ -197,6 +197,11 @@ open class ExpandableTableViewController: UITableViewController {
         
         let numberOfSubCells = expandableTableView.expandableDelegate.expandableTableView(expandableTableView, numberOfSubRowsInRowAtExpandableIndexPath: expandableIndexPath)
         var heightForNewRows: CGFloat = 0.0
+
+        if numberOfSubCells == 0 {
+            return
+        }
+
         for _ in 0...(numberOfSubCells - 1){
             indexesArray.append((newIndexPath as NSIndexPath).copy() as! IndexPath)
             self.cellsTypeArray.insert(.subCell, at: newIndexPath.row)

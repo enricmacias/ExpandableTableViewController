@@ -319,6 +319,9 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
+					789782BBF51A8EE9E2E692CA96D523E1 = {
+						LastSwiftMigration = 0810;
+					};
 					D18A9F00F35F76596E6CB02B0C0B1DD2 = {
 						LastSwiftMigration = 0820;
 					};
@@ -617,6 +620,7 @@
 				PRODUCT_NAME = Pods_ExpandableTableViewController_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -651,6 +655,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

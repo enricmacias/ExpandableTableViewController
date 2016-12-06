@@ -22,7 +22,7 @@ class CommonTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
@@ -31,23 +31,23 @@ class CommonTableViewCell: UITableViewCell {
     // MARK: Animations
     
     func openArrow(){
-        UIView.animateWithDuration(0.25, animations: {
-            self.arrowIndicatorImageView.transform = CGAffineTransformMakeRotation((CGFloat(M_PI) / 180.0)*0.0);
+        UIView.animate(withDuration: 0.25, animations: {
+            self.arrowIndicatorImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI) / 180.0)*0.0);
         })
     }
     
     func closeArrow(){
-        UIView.animateWithDuration(0.25, animations: {
-            self.arrowIndicatorImageView.transform = CGAffineTransformMakeRotation((CGFloat(M_PI) / 180.0)*180.0);
+        UIView.animate(withDuration: 0.25, animations: {
+            self.arrowIndicatorImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI) / 180.0)*180.0);
         })
     }
     
     func showSeparator(){
-        self.separatorInset = UIEdgeInsetsMake(0, CGRectGetWidth(self.frame), 0, 0);
+        self.separatorInset = UIEdgeInsetsMake(0, self.frame.width, 0, 0);
     }
     
     func hideSeparator(){
-        self.separatorInset = UIEdgeInsetsZero;
+        self.separatorInset = UIEdgeInsets.zero;
     }
 
 }

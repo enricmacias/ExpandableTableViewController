@@ -32,18 +32,18 @@ class CommonTableViewCell: UITableViewCell {
     
     func openArrow(){
         UIView.animate(withDuration: 0.25, animations: {
-            self.arrowIndicatorImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI) / 180.0)*0.0);
+            self.arrowIndicatorImageView.transform = CGAffineTransform(rotationAngle: (CGFloat.pi / 180.0)*0.0);
         })
     }
     
     func closeArrow(){
         UIView.animate(withDuration: 0.25, animations: {
-            self.arrowIndicatorImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI) / 180.0)*180.0);
+            self.arrowIndicatorImageView.transform = CGAffineTransform(rotationAngle: (CGFloat.pi / 180.0)*180.0);
         })
     }
     
     func showSeparator(){
-        self.separatorInset = UIEdgeInsetsMake(0, self.frame.width, 0, 0);
+        self.separatorInset = UIEdgeInsets.init(top: 0, left: self.frame.width, bottom: 0, right: 0);
     }
     
     func hideSeparator(){

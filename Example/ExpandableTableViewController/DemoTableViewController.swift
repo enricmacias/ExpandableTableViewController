@@ -157,7 +157,7 @@ class DemoTableViewController: ExpandableTableViewController, ExpandableTableVie
     func expandableTableView(_ expandableTableView: ExpandableTableView, heightForSubRowAtExpandableIndexPath expandableIndexPath: ExpandableIndexPath) -> CGFloat {
         switch(expandableIndexPath.row){
         case TableViewRows.text.rawValue:
-            return UITableViewAutomaticDimension
+            return UITableView.automaticDimension
         case TableViewRows.datePicker.rawValue:
             return 163.0
         case TableViewRows.list.rawValue:

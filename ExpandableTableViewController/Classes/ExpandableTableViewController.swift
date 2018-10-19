@@ -211,7 +211,7 @@ open class ExpandableTableViewController: UITableViewController {
         }
         
         tableView.beginUpdates()
-        tableView.insertRows(at: indexesArray, with: UITableViewRowAnimation.middle)
+        tableView.insertRows(at: indexesArray, with: UITableView.RowAnimation.middle)
         tableView.endUpdates()
         
         // Avoids an old-fashioned scrolling to the top when inserting cells and the table view is scrolled.
@@ -238,7 +238,7 @@ open class ExpandableTableViewController: UITableViewController {
         }
         
         tableView.beginUpdates()
-        tableView.deleteRows(at: indexesArray, with: UITableViewRowAnimation.middle)
+        tableView.deleteRows(at: indexesArray, with: UITableView.RowAnimation.middle)
         tableView.endUpdates()
         
         // Avoids an old-fashioned scrolling to the top when deleting cells and the table view is scrolled.
